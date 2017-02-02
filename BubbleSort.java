@@ -17,12 +17,4 @@ public class BubbleSort {
     }
     System.out.println("");
   }
-
-  public static void main(String[] args) {
-     BubbleSort b = new BubbleSort();
-     int [] a = new int[] {5,3,4,8,6,0,3,45,2,84,984,35,2};
-     System.out.println("hi");
-
-     b.bubbleSorter(a);
-   } 
 }

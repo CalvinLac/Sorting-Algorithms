@@ -17,10 +17,4 @@ public class InsertionSort {
     }
     System.out.println("");
   }
-
-  public static void main(String[] args) {
-    InsertionSort i = new InsertionSort();
-    int [] a = new int[] {5,3,4,8,6,0,3,45,2,84,984,35,2};
-    i.insertionSort(a);
-  }
 }
