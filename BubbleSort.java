@@ -11,10 +11,5 @@ public class BubbleSort {
         }                   
       }
     }
-    System.out.println("");
-    for (int c = 0; c < intArray.length -1; c ++){
-      System.out.print(intArray[c] + ", ");
-    }
-    System.out.println("");
   }
 }

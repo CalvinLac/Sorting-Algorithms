@@ -11,10 +11,5 @@ public class InsertionSort {
             }
         }
     }
-    System.out.println("");
-    for (int c = 0; c < input.length -1; c ++){
-      System.out.print(input[c] + ", ");
-    }
-    System.out.println("");
   }
 }

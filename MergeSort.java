@@ -9,11 +9,6 @@ public class MergeSort {
     number = values.length;
     this.helper = new int[number];
     mergesort(0, number - 1);
-    System.out.println("");
-    for (int c = 0; c < values.length -1; c ++){
-      System.out.print(values[c] + ", ");
-    }
-    System.out.println("");
   }
 
   private void mergesort(int low, int high) {
@@ -58,11 +53,5 @@ public class MergeSort {
       k++;
       i++;
     }
-  }
-
-  public static void main(String[] args) {
-    MergeSort m = new MergeSort();
-    int [] a = new int[] {5,3,4,8,6,0,3,45,2,84,984,35,2};
-    m.sort(a);
   }
 }
