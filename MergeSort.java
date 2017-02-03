@@ -1,3 +1,4 @@
+// Code retireved from http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html
 public class MergeSort {
   private int[] numbers;
   private int[] helper;

@@ -6,14 +6,12 @@ public class GenerateArray {
       
     array = new int[length];
     
+    //make use of the Random class
     Random random = new Random();
     
     //populate the array with random integers 0-1000
     for(int i=0; i<length; i++)
       array[i]=random.nextInt(1001);
-    // //print the contents of the array
-    // for(int i=0;i<length;i++)
-    //  System.out.println(array[i]);
     return array;
   }
 }

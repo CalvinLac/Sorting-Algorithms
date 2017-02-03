@@ -1,4 +1,4 @@
-//http://www.java2novice.com/java-sorting-algorithms/quick-sort/
+//Code retrieved from http://www.java2novice.com/java-sorting-algorithms/quick-sort/
 public class QuickSort {
   private int array[];
   private int length;
@@ -46,6 +46,7 @@ public class QuickSort {
   }
 
   private void exchangeNumbers(int i, int j) {
+    //This is the exchange code
     int temp = array[i];
     array[i] = array[j];
     array[j] = temp;
