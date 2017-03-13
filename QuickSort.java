@@ -3,13 +3,14 @@ public class QuickSort {
   private int array[];
   private int length;
 
-  public void sort(int[] inputArr) {
+  public int[] sort(int[] inputArr) {
     if (inputArr == null || inputArr.length == 0) {
-        return;
+        return array;
     }
     this.array = inputArr;
     length = inputArr.length;
     quickSort(0, length - 1);
+    return array;
   }
 
   private void quickSort(int lowerIndex, int higherIndex) { 

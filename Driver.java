@@ -2,6 +2,8 @@ import java.io.*;
 
 public class Driver {
 
+  private static int [] sortedArray;
+
   //generateTheInputArray that takes an arguement and makes the desired output
   public int[] generateTheInputArray(String order, int size) {
     int[] inputArray; 
@@ -39,7 +41,7 @@ public class Driver {
       BubbleSort bubble = new BubbleSort();
       //timing of the algo logic
       Long startTime = System.nanoTime();
-      bubble.bubbleSorter(generatedArray);
+      sortedArray = bubble.bubbleSorter(generatedArray);
       Long endTime = System.nanoTime() - startTime;
       return endTime;
     }
@@ -48,7 +50,7 @@ public class Driver {
       InsertionSort insertion = new InsertionSort();
       //timing of the algo logic
       Long startTime = System.nanoTime();
-      insertion.insertionSort(generatedArray);
+      sortedArray = insertion.insertionSort(generatedArray);
       Long endTime = System.nanoTime() - startTime;
       return endTime;
     }
@@ -57,7 +59,7 @@ public class Driver {
       MergeSort merge = new MergeSort();
       //timing of the algo logic
       Long startTime = System.nanoTime();
-      merge.sort(generatedArray);
+      sortedArray = merge.sort(generatedArray);
       Long endTime = System.nanoTime() - startTime;
       return endTime;
     }
@@ -66,7 +68,7 @@ public class Driver {
       QuickSort quick = new QuickSort();
       //timing of the algo logic
       Long startTime = System.nanoTime();
-      quick.sort(generatedArray);
+      sortedArray = quick.sort(generatedArray);
       Long endTime = System.nanoTime() - startTime;
       return endTime;
     }
@@ -109,6 +111,9 @@ public class Driver {
     rawRunTimeOfAlgo = driver.runSortAlgo(algorithm, inputArray);
     double runTimeOfAlgo = rawRunTimeOfAlgo / 1000000000.000000000;
     printWriter.println(runTimeOfAlgo + " seconds");
+    for (int i = 0; i < sortedArray.length; i++) {
+      printWriter.println(sortedArray[i]);
+    }
     printWriter.close();
   }
 }

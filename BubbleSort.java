@@ -1,6 +1,6 @@
 //Code retrieved from http://www.java2novice.com/java-sorting-algorithms/bubble-sort/
 public class BubbleSort {
-  public void bubbleSorter( int [] intArray){
+  public int[] bubbleSorter( int [] intArray){
     //initializing the data members
     int n = intArray.length;
     int temp = 0;               
@@ -16,5 +16,6 @@ public class BubbleSort {
         }                   
       }
     }
+    return intArray;
   }
 }
